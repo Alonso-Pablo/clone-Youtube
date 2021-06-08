@@ -1,0 +1,15 @@
+.content__container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+
+    .container__section--title {
+        width: 100%;
+        color: #030303;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 24px 0 24px 8px;
+    }
+}
