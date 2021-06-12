@@ -4,15 +4,18 @@ import '../assets/styles/components/Search.scss';
 
 const Search = ({searchIcon, micIcon}) => (
     <div className="header__search--container">
-        <form id="header__search-form">
-            <label htmlFor="header-search-input"></label>
-                <input type="text" id="header__search-input" placeholder="Search" />
+        <form className="header__search-form">
+
+            <input type="text" className="header__search-input" placeholder=" Search" />
+
             <button type="button" className="header__search-button">
                 <img src={searchIcon} alt="search icon" />
-            </button>                
-        </form>
+            </button> 
 
-        <img src={micIcon} className="header__mic-icon" />
+        </form>
+        <div  className="header__mic-icon">
+            <img src={micIcon} />
+        </div>
     </div>
 );
 

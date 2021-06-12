@@ -1,0 +1,164 @@
+html, body, #app {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    
+    .sign-in {
+        box-sizing: border-box;
+        display: flex;
+        width: 448px;
+        height: 570px;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 0;
+        min-height: 460px;
+        padding: 48px 40px 36px;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        overflow-y: auto;
+
+        .sign-in__container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            h1 {
+                text-align: center;
+                padding-top: 16px;
+                color: #202124;
+                font-size: 2.3rem;
+                font-weight: 400;
+            }
+            .sign-in--instruction {
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.5;
+                padding-top: 8px;
+            }
+            .sign-in--name-email-form {
+                position: relative;
+                display: flex;
+                width: 100%;
+                padding-top: 32px;
+                flex-direction: column;
+
+                .sign-in--name-label {
+                    position: absolute;
+                    display: inline;
+                    padding: 0 8px;
+                    background-color: white;
+                    font-size: 1.6rem;
+                    color: #5f6368;
+                    left: 4%;
+                    bottom: 60%;
+                    transform: scale(.75) translateX(-25px) translateY(-36px);
+                    // transform is for an animation. But now, i can't do it
+                }
+                .name {
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 55px;
+                    font-size: 1.6rem;
+                    padding: 13px 15px;
+                    margin-bottom: 30px;
+                    border: 1px solid #dadce0;
+                    border-radius: 4px;
+                }
+                .name:focus-within {
+                    border: 1px solid #1a73e8;
+                }
+                
+                .sign-in--email-label {
+                    position: absolute;
+                    display: inline;
+                    padding: 0 8px;
+                    background-color: white;
+                    font-size: 1.6rem;
+                    color: #5f6368;
+                    left: 3%;
+                    bottom: 10%;
+                    transform: scale(.75) translateX(-25px) translateY(-36px);
+                    // transform is for an animation. But now, i can't do it
+                }
+                .email {
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 55px;
+                    font-size: 1.6rem;
+                    padding: 13px 15px;
+                    border: 1px solid #dadce0;
+                    border-radius: 4px;
+                }
+                .email:focus-within {
+                    border: 1px solid #1a73e8;
+                }
+            }
+            .sign-in-email--forgot-email{
+                padding: 9px 0 3px 0;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.4rem;
+                color: #1a73e8;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .sign-in-email--more-instruction {
+                display: flex;
+                flex-direction: column;
+                margin: 41px 0 3px 0;
+                font-family: 'Roboto', sans-serif;
+                color: #5f6368;
+                font-size: 1.4rem;
+
+                a {
+                    color: #1a73e8;
+                    font-weight: 500;
+                }
+            }
+            .sign-in-email--create-next {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 40px;
+                padding-bottom: 20px;
+
+                .sign-in-email--button-create {
+                    display: flex;
+                    margin-left: -8px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 120px;
+                    height: 36px;
+                    .create-account {
+                        padding: 0 8px;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        color: #1a73e8;
+                    }
+                    .create-account:hover {
+                        color: #174ea6;
+                    }
+
+                }
+                .sign-in-email--button-create:hover {
+                    background-color: #F6FAFE;
+                }
+
+            }
+            .sign-in-email--button-next {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                height: 36px;
+                background-color: #1a73e8;
+                color: #fff;
+                font-weight: 500;
+                font-size: 1.4rem;
+                border-radius: 4px;
+            }
+        }
+    }
+}

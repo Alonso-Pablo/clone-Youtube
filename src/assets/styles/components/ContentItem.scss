@@ -1,4 +1,5 @@
 .content__item {
+    // position: relative;
     width: (100% / 3) - 16 - 0.01;
     min-width: 300px;
     // max-width: 400px;
@@ -7,10 +8,12 @@
     cursor: pointer;
 
     img {
+
         width: 100%;
         
     }
     .item__description {
+        position: relative;
         display: flex;
         flex-direction: row;
 
@@ -22,6 +25,7 @@
             border-radius: 50%;
         }
         .description__title-and-data {
+
             display: flex;
             flex-direction: column;
             padding-right: 24px;
@@ -30,6 +34,48 @@
                 font-weight: 500;
                 color: #030303;
                 margin: 12px 0 6px 0;
+            }
+            .description__more-option {
+                position: absolute;
+                opacity: 0;
+                width: 16px;
+                height: 16px;
+                padding: 8px;
+                right: 0;
+                top: 9%;
+                // left: 93%;
+                // bottom: 10%;
+            }
+            .description__more-option:hover {
+                opacity: 1;
+            }
+            .more-option__menu--displayed {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                width: 174px;
+                height: 52px;
+                background-color: #FFFFFF;
+                border-radius: 4px;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+                right: 0;
+                top: 50%;
+
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+                    height: 36px;
+                    padding: 0 36px 0 16px;
+                    background-color: #FFFFFF;
+                }
+                button:hover {
+                    background-color: #E5E5E5;
+                }
+                button:focus {
+                    background-color: #DBDBDB;
+                }
             }
             .description__data {
                 display: flex;

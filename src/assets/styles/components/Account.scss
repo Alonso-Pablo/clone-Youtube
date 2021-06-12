@@ -1,0 +1,52 @@
+.account {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    margin-top: 1px;
+    cursor: pointer;
+    color: #5f6368;
+
+    .account__user-icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 12px;
+    }
+    .account__user-data {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .user-data__name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #3c4043;
+        }
+        .user-data_email {
+            font-size: 1.2rem;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    .account__user-status {
+        align-self: flex-start;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.account:hover {
+    transition: background-color 0.1s;
+    background-color: #E8F0FE;
+}
+.account::after {
+    position: absolute;
+    content: '';
+    width: 85%;
+    left: 33px;
+    right: 0;
+    bottom: -1px;
+    border-bottom: 1px solid #dadce0;
+}

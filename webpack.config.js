@@ -6,7 +6,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/',
     },
     resolve: {
         extensions: ['.js', '.jsx']
@@ -22,14 +23,18 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                use: {
-                    loader: 'html-loader',
-                },
+                use: [
+                    {
+                        loader: 'html-loader',
+                    },
+                ],
             },
             {
                 test: /\.(s*)css$/,
                 use: [
-                  { loader: MiniCssExtractPlugin.loader },
+                    { 
+                        loader: MiniCssExtractPlugin.loader 
+                    },
                   'css-loader',
                   'sass-loader',
                 ],
@@ -40,7 +45,7 @@ module.exports = {
                     {
                         'loader': 'file-loader',
                         options: {
-                            name: 'assets/imgs/[hash].[ext]'
+                            name: 'assets/static/[hash].[ext]'
                         }
                     }
                 ]
@@ -50,6 +55,9 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
+    },
+    devServer: {  
+        historyApiFallback: true,  
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -64,4 +72,4 @@ module.exports = {
 // Dependencias
     // npm i react react-dom
 // Dependencias de desarrollo
-    // npm i file-loader @babel/core @babel/preset-env @babel/preset-react babel-loader webpack webpack-cli html-webpack-plugin html-loader webpack-dev-server mini-css-extract-plugin css-loader node-sass sass-loader eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y -D
+    // npm i react-router-dom file-loader @babel/core @babel/preset-env @babel/preset-react babel-loader webpack webpack-cli html-webpack-plugin html-loader webpack-dev-server mini-css-extract-plugin css-loader node-sass sass-loader eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y -D
