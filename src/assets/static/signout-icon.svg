@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#909090;}
+	.st0{fill:#262626;}
 </style>
-<path class="st0" d="M87,0.3H13C6,0.3,0.3,6,0.3,13v20.4l11-0.1l0.1-22h77.4v77.4H11.4V66.6h-11V87C0.3,94,6,99.7,13,99.7h74
-	c7,0,12.7-5.7,12.7-12.7V13C99.7,6,94,0.3,87,0.3z"/>
-<rect x="0.3" y="44.5" class="st0" width="69.3" height="11"/>
-<polygon class="st0" points="47.4,22.5 39.4,30.4 54.7,45.3 55.1,55 40.4,69.3 47.7,77 75.8,50 "/>
+<path class="st0" d="M81.4,41.1c0,22.5-18.2,40.7-40.7,40.7S0,63.6,0,41.1S18.2,0.4,40.7,0.4S81.4,18.6,81.4,41.1z M40.7,5.8
+	C21.2,5.8,5.4,21.6,5.4,41.1s15.8,35.3,35.3,35.3s35.3-15.8,35.3-35.3S60.2,5.8,40.7,5.8z"/>
+<rect x="63.5" y="80.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 83.3722 -34.7863)" class="st0" width="40.3" height="5.9"/>
 </svg>

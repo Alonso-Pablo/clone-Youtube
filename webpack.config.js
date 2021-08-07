@@ -18,46 +18,42 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
-                },
+                    loader: "babel-loader"
+                }
             },
             {
                 test: /\.html$/,
                 use: [
                     {
                         loader: 'html-loader',
-                    },
-                ],
+                    }
+                ]
             },
             {
                 test: /\.(s*)css$/,
                 use: [
                     { 
-                        loader: MiniCssExtractPlugin.loader 
+                        loader: MiniCssExtractPlugin.loader,
                     },
                   'css-loader',
-                  'sass-loader',
-                ],
+                  'sass-loader'
+                ]
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|gif|jpg|svg)$/,
                 use: [
                     {
                         'loader': 'file-loader',
                         options: {
-                            name: 'assets/static/[hash].[ext]'
+                            name: 'assets/[hash].[ext]'
                         }
                     }
                 ]
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                type: 'asset/resource',
-            },
-        ],
+            }
+        ]
     },
     devServer: {  
-        historyApiFallback: true,  
+        historyApiFallback: true, 
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -65,10 +61,11 @@ module.exports = {
             filename: './index.html',
         }),
         new MiniCssExtractPlugin({
-            filename: 'assets/styles/[name].css',
+            filename: 'assets/[name].css'
         }),
     ],
-}
+};
+
 // Dependencias
     // npm i react react-dom
 // Dependencias de desarrollo
